@@ -10,8 +10,16 @@ body {
   font-weight: 600;
 }
 
+a {
+  text-decoration: none;
+}
+
 .border {
   border: 1px solid black;
+}
+
+.border-f {
+  border: 1px solid white;
 }
 
 .rel {
@@ -64,7 +72,6 @@ body {
 }
 
 .top-header [class*="nav-"] li a {
-  text-decoration: none;
   color: black;
   font-size: 0.8rem;
 }
@@ -154,6 +161,70 @@ body {
   display: block;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer > .container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .nav-top img{
+  width: 60%;
+  margin-top: 4rem;
+}
+
+footer .nav-top h1 {
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+footer .nav-top ul{
+  list-style-type: none;
+}
+
+footer .nav-top li a {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+footer .container hr:first-of-type {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+footer .nav-bottom li {
+  display: inline-block;
+}
+
+footer .nav-bottom li:not(:last-child) {
+  margin-right: 8%;
+}
+
+footer .nav-bottom a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer .container hr:last-of-type {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+footer .final {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+footer .final img {
+  width: 15%;
+  border: 0.5px solid white;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 1100px) {
   .top-header {
     width: 80%;
@@ -174,6 +245,23 @@ body {
   }
   .top-main .card {
     width: 360px;
+  }
+  footer .nav-top h1 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  footer .nav-top li a {
+    font-size: 1.2rem;
+  }
+  footer .nav-top ul li:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  footer .nav-bottom a {
+    font-size: 1.2rem;
+  }
+  footer .final img {
+    width: 25%;
   }
 }
 
@@ -211,9 +299,41 @@ body {
   }
   .top-main .card img:not(:first-child) {
     width: 55%;
+  }
+  footer .nav-top {
+    text-align: center;
+  }
+  footer .nav-top img{
+    margin-top: 6rem;
+  }
+  footer .nav-top h1 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  footer .nav-top li a {
+    font-size: 1rem;
+  }
+  footer .nav-top ul li:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  footer .nav-bottom {
+    text-align: center;
+  }
+  footer .nav-bottom a {
+    font-size: 1rem;
+  }
+  footer .final {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  footer .final img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 630px) {
   .top-main .card img:not(:first-child) {
     width: 70%;
+  }
 }
