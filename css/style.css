@@ -85,6 +85,10 @@ body {
   text-align: center;
 }
 
+.bottom-header .center {
+  width: 100%;
+}
+
 .bottom-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
