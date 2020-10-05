@@ -161,9 +161,47 @@ a {
   display: block;
 }
 
+.central-main {
+  height: 400px;
+  background-image: url("../img/old.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.central-main .container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.central-main .container [class*="col-"] {
+  height: 400px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+
+.central-main .container [class*="col-"] img {
+height: 400px;
+}
+
+.central-main .container [class*="col-"] h3 {
+  margin-top: 250px;
+}
+
+.central-main .container [class*="col-"] h5 {
+  margin-top: 250px;
+}
+
+.central-main .container [class*="col-"] span {
+  font-size: 0.8rem;
+}
+
 footer {
   background-color: black;
   color: white;
+  margin-top: 200px;
 }
 
 footer > .container {
@@ -246,6 +284,19 @@ footer .final img {
   .top-main .card {
     width: 360px;
   }
+  .central-main .container .appear {
+    height: 200px;
+    text-align: left;
+  }
+  .central-main .container [class*="col-"] h3 {
+    margin-top: 50px;
+  }
+  .central-main .container [class*="col-"] h5 {
+    margin-top: 10px;
+  }
+  footer {
+    margin-top: 400px;
+  }
   footer .nav-top h1 {
     font-size: 1.2rem;
     margin-top: 2rem;
@@ -299,6 +350,19 @@ footer .final img {
   }
   .top-main .card img:not(:first-child) {
     width: 55%;
+  }
+  .central-main .container .appear {
+    height: 200px;
+    text-align: left;
+  }
+  .central-main .container [class*="col-"] h3 {
+    margin-top: 50px;
+  }
+  .central-main .container [class*="col-"] h5 {
+    margin-top: 10px;
+  }
+  footer {
+    margin-top: 400px;
   }
   footer .nav-top {
     text-align: center;
